@@ -19,6 +19,7 @@
 							<h5>Envia un mensaje</h5>
 
 							<form id="form-contact" method="POST" action="/contact-us-email">
+								{{ csrf_field() }}
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group comment-form-author">
