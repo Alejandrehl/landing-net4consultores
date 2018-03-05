@@ -17,7 +17,8 @@
 							<img class="retina" src="img/tarjeta.jpg" width="400" height="200" alt="Contact Us">
 							<hr>
 							<h5>Envia un mensaje</h5>
-							<form method="post" class="contact-form m-b-0">
+
+							<div id="contact-form" class="contact-form m-b-0">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group comment-form-author">
@@ -34,22 +35,23 @@
 									<div class="col-sm-12">
 										<div class="form-group comment-form-url">
 											<label for="phone" class="control-label">Teléfono</label>
-											<input id="phone" class="form-control" name="phone" type="text" value="">
+											<input id="phone" class="form-control" name="phone" type="number" value="">
 										</div>
 									</div>
 									<div class="col-sm-12">
 										<div class="form-group comment-form-comment">
-											<label for="comment" class="control-label">Tu mensaje <span class="required red-text">*</span></label>
-											<textarea id="comment" class="form-control" name="comment"></textarea>
+											<label for="message" class="control-label">Tu mensaje <span class="required red-text">*</span></label>
+											<textarea id="message" class="form-control" name="message"></textarea>
 										</div>
 									</div>
 								</div>
 
 								<div class="form-submit">
-									<button type="submit" class="btn btn-primary submit">Enviar</button>
+									<button @click="testVue();" type="button" class="btn btn-primary submit">Enviar</button>
 									<span class="form-message"></span>
 								</div>
-							</form><!-- .contact-form -->
+							</div><!-- .contact-form -->
+
 						</div><!-- .page-content -->
 					</article><!-- .page -->
 				</div>
