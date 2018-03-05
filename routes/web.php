@@ -23,7 +23,7 @@ Route::get('/services', function(){
 Route::get('/contact-us', function(){
 	return view('contact-us');
 });
-Route::post('/contact-us-mail', 'MailController@contactUs');
+Route::post('/contact-us-email', 'MailController@contactUs');
 
 Auth::routes();
 

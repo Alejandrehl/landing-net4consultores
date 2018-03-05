@@ -1,5 +1,5 @@
 new Vue({
-	el: '#contact-form',
+	el: '#app',
 	methods: {
 		testVue(){
 			console.log('Vue funcionando correctamente');

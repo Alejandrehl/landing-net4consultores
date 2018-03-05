@@ -18,7 +18,7 @@
 							<hr>
 							<h5>Envia un mensaje</h5>
 
-							<div id="contact-form" class="contact-form m-b-0">
+							<form id="form-contact" method="POST" action="/contact-us-email">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group comment-form-author">
@@ -45,12 +45,8 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="form-submit">
-									<button @click="testVue();" type="button" class="btn btn-primary submit">Enviar</button>
-									<span class="form-message"></span>
-								</div>
-							</div><!-- .contact-form -->
+								<input type="submit" name="submit" value="Enviar" class="btn btn-primary">
+							</form>
 
 						</div><!-- .page-content -->
 					</article><!-- .page -->
