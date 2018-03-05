@@ -20,10 +20,9 @@ Route::get('/about-us', function(){
 Route::get('/services', function(){
 	return view('services');
 });
-Route::get('/contact-us', function(){
-	return view('contact-us');
-});
-Route::post('/contact-us-email', 'MailController@contactUs');
+
+Route::get('/contact-us', 'ContactController@show');
+Route::post('/contact-us',  'ContactController@mailToAdmin');
 
 Auth::routes();
 
