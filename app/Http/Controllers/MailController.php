@@ -8,6 +8,9 @@ class MailController extends Controller
 {
 	public function contactUs(Request $request){
 		$input = $request->input();
-		dd($input);
+		$user_name = $input['name'];
+		$user_email = $input['email'];
+		$user_phone = $input['phone'];
+		$user_message = $input['message'];
 	}
 }
