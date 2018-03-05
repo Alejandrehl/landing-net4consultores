@@ -1,0 +1,204 @@
+/******************************************************************************
+  Timeline Posts
+*******************************************************************************/
+.timeline-layout {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+
+  &:before {
+    background-color: rgba(#000,.2);
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    @media (max-width: 767px) {
+      left: $module-rem * 1.5;
+      margin-left: 18px;
+    }
+  }
+  .post {
+    margin: 0;
+    padding: 5px 40px 5px 0 !important;
+    position: relative;
+    width: 50%;
+    @media (max-width: 767px) {
+      margin: 0;
+      padding: 21px 0 42px 60px !important;
+      width: 100%;
+
+      &:last-child {
+        padding-bottom: 21px !important;
+      }
+    }
+
+    &:before,
+    &:after {
+      border: 15px solid transparent;
+      border-left-color: rgba(#000,.07);
+      content: "";
+      display: block;
+      position: absolute;
+      right: 9px;
+      top: 31px;
+      @media (max-width: 767px) {
+        border: 15px solid transparent;
+        border-right-color: rgba(#000,.07);
+        left: 29px;
+        right: auto;
+        top: 47px;
+      }
+    }
+    &:after {
+      border: 14px solid transparent;
+      border-left-color: #fff;
+      right: 12px;
+      top: 32px;
+      @media (max-width: 767px) {
+        border: 14px solid transparent;
+        border-right-color: #fff;
+        left: 32px;
+        right: auto;
+        top: 48px;
+      }
+    }
+    .post-wrap {
+      padding: 0;
+      position: relative;
+
+      .date {
+        font-style: italic;
+        left: 100%;
+        margin: 28px 0 0 80px;
+        position: absolute;
+        width: 100%;
+        @media (max-width: 767px) {
+          bottom: 100% ;
+          left: 0 !important;
+          margin: 0 0 4px !important;
+          text-align: center !important;
+          white-space: nowrap;
+        }
+      }
+      .post-icon {
+        background: $main-color;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 18px;
+        height: 40px;
+        left: 100%;
+        line-height: 40px;
+        margin: 0 0 0 20px;
+        position: absolute;
+        text-align: center;
+        top: 21px;
+        width: 40px;
+        @media (max-width: 767px) {
+          left: auto;
+          margin: 0 20px 0 0;
+          right: 100%;
+        }
+      }
+      .post-media {
+        margin-bottom: $module-rem * 2;
+      }
+      .post-header {
+        margin-bottom: $module-rem * 2;
+        @media #{$min768} {
+          padding-left: $module-rem * 2;
+          padding-right: $module-rem * 2;
+        }
+
+        &:first-child {
+          padding-top: $module-rem * 2;
+        }
+        .tags {
+          margin-bottom: $module-rem;
+        }
+        .post-title {
+          margin-bottom: $module-rem;
+          @include fontSize(24px);
+          @media #{$max767} {
+            @include fontSize(22px);
+          }
+        }
+      }
+      .post-content {
+        margin-bottom: $module-rem * 2;
+        @media #{$min768} {
+          padding-left: $module-rem * 2;
+          padding-right: $module-rem * 2;
+        }
+
+        .post-header {
+          .post-title {
+            @include fontSize(16px);
+          }
+        }
+        .post-entry {
+          margin-bottom: 0;
+        }
+      }
+      .post-footer {
+        .post-author,
+        .post-sharing {
+          @media #{$min768} {
+            padding-left: $module-rem * 2;
+            padding-right: $module-rem * 2;
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      margin-left: 50%;
+      padding: 5px 0 5px 40px !important;
+      @media (max-width: 767px) {
+        margin: 0;
+        padding: 21px 0 42px 60px !important;
+        width: 100%;
+
+        &:last-child {
+          padding-bottom: 21px !important;
+        }
+      }
+
+      &:before,
+      &:after {
+        border: 15px solid transparent;
+        border-right-color: rgba(#000,.07);
+        left: 9px;
+        right: auto;
+        @media (max-width: 767px) {
+          left: 29px;
+        }
+      }
+      &:after {
+        border: 14px solid transparent;
+        border-right-color: #fff;
+        left: 12px;
+        right: auto;
+        @media (max-width: 767px) {
+          left: 32px;
+        }
+      }
+      .post-wrap {
+        .date {
+          left: auto;
+          margin: 28px 80px 0 0;
+          right: 100%;
+          text-align: right;
+        }
+        .post-icon {
+          left: auto;
+          margin: 0 20px 0 0;
+          right: 100%;
+        }
+      }
+    }
+  }
+}

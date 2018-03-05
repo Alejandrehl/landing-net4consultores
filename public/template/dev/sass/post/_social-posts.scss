@@ -1,0 +1,113 @@
+/******************************************************************************
+  Social Posts
+*******************************************************************************/
+.posts-list {
+  .social-layout {
+    .post {
+      .author-info {
+        padding: $module-rem * 2;
+        @media #{$max767} {
+          padding: $module-rem * 1.5;
+        }
+
+        .avatar {
+          border-radius: 50%;
+          float: left;
+          height: 50px;
+          margin: 0 21px 0 0;
+          overflow: hidden;
+          width: 50px;
+        }
+        .user-name {
+          @include fontSize(14px);
+          margin-bottom: .5em;
+
+          a {
+            color: #000;
+
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+      .post-media {
+        margin-bottom: $module-rem * 1.5;
+      }
+      .post-header {
+        margin-bottom: $module-rem * 1.5;
+        text-align: left;
+
+        .post-title {
+          @include fontSize(20px);
+          @media #{$max767} {
+            @include fontSize(18px);
+          }
+
+          a {
+            color: #000;
+
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+      .post-content {
+        @include fontSize(12px);
+        margin-bottom: $module-rem * 1.5;
+      }
+      .post-footer {
+        padding: $module-rem * 0.5 0;
+
+        .social {
+          margin: 0 -4px;
+          padding: 0 $module-rem * 1.5;
+          @media #{$max767} {
+            margin: 0 -9px;
+          }
+        }
+      }
+      &.followers {
+        color: #fff;
+        padding: $module-rem * 2 !important;
+        position: relative;
+        text-align: center;
+        @media #{$max767} {
+          padding: $module-rem * 1.5 !important;
+        }
+
+        &.twitter {
+          background: #00aced;
+        }
+        &.facebook {
+          background: #3B5998;
+        }
+        &.google {
+          background: #dd4b39;
+        }
+        &.linkedin {
+          background: #007bb6;
+        }
+        &.youtube {
+          background: #bb0000;
+        }
+        .post-icon {
+          font-size: 18px;
+          left: $module-rem * 2;
+          position: absolute;
+          top: $module-rem * 2;
+          @media #{$max767} {
+            left: $module-rem * 1.5;
+            top: $module-rem * 1.5;
+          }
+        }
+        .social-data {
+          .count {
+            @include fontSize(40px);
+          }
+        }
+      }
+    }
+  }
+}

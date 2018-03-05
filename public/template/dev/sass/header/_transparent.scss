@@ -1,0 +1,47 @@
+/******************************************************************************
+  Transparent Header
+*******************************************************************************/
+.transparent-header {
+	&:not(.scrolling) {
+		.site-header {
+			&:not(.open-action) {
+				background: transparent;
+				box-shadow: none;
+			}
+
+			.menu {
+				.menu-btn {
+					span {
+						background: #fff;
+					}
+				}
+				&:not(.collapsed) {
+					.menu-list {
+						> li {
+							> a {
+								color: #fff;
+							}
+							&.menu-item-has-children {
+								> a {
+									&:after {
+										border-color: rgba(#fff, .6);
+									}
+								}
+							}
+							&:hover {
+								> a {
+									color: $main-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-btn {
+				svg {
+					fill: rgba(#fff,.6);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+/******************************************************************************
+  Structure
+*******************************************************************************/
+.page-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  padding-top: $header-height;
+  @media #{$max767} {
+    padding-top: $header-height-767;
+  }
+}
+#main {
+  flex: 1 0 auto;
+  padding: 0 0 $module-rem * 4;
+  @media #{$max767} {
+    padding: 0 0 $module-rem * 2;
+  }
+
+  &.top-indent {
+    padding-top: $module-rem * 4;
+    @media #{$max767} {
+      padding-top: $module-rem * 2;
+    }
+  }
+  .page-header {
+    color: #000;
+    padding: $module-rem * 6 1.5rem;
+    position: relative;
+    text-align: center;
+    @media #{$max767} {
+      padding-top: $module-rem * 3;
+      padding-bottom: $module-rem * 3;
+    }
+
+    &.bg-page-header {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding-top: $module-rem * 8;
+      padding-bottom: $module-rem * 8;
+      margin-bottom: $module-rem * 4;
+      @media #{$max767} {
+        margin-bottom: $module-rem * 2;
+        padding-top: $module-rem * 4;
+        padding-bottom: $module-rem * 4;
+      }
+      &:before {
+        background: rgba(#000,.7);
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+      color: inherit;
+      margin: 0;
+      position: relative;
+    }
+    h1, .h1 {
+      @include fontSize($h1-font-size * 1.2);
+      @media only screen and (max-width: 767px) {
+        @include fontSize($h1-font-size / 1.4);
+      }
+    }
+  }
+  &.left-sidebar {
+    .sidebar {
+      padding-left: 1.07145rem;
+      padding-right: $module-rem * 3;
+    }
+  }
+}

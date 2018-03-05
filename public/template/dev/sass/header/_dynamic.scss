@@ -1,0 +1,22 @@
+/******************************************************************************
+  Dynamic Header
+*******************************************************************************/
+@media #{$min768} {
+	.dynamic-header {
+		.site-header {
+			position: fixed;
+			z-index: 999;
+
+			&.small-height {
+				height: 42px;
+				max-height: 42px;
+
+				.menu {
+					.sub-menu-wrap {
+						padding-top: 13px;
+					}
+				}
+			}
+		}
+	}
+}

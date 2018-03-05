@@ -1,0 +1,89 @@
+/******************************************************************************
+  Forms
+*******************************************************************************/
+.form-control {
+  border-color: #ccc;
+  border-radius: 0;
+  color: #000;
+  padding: 10px 20px 11px;
+  transition: border .2s $animation;
+  @include placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  @media #{$max767} {
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+  &[type="number"] {
+    padding-right: 10px;
+  }
+  &:focus {
+    border-color: #000;
+  }
+}
+textarea {
+  height: $module-rem * 6;
+}
+@include placeholder {
+  color: #999;
+  font-style: italic;
+}
+.control-label {
+  cursor: pointer;
+  font-style: italic;
+  line-height: 1.4;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  @media #{$max767} {
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+}
+.checkout-forms {
+  cursor: pointer;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+  vertical-align: top;
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+
+    &:checked {
+      + .new-checkbox {
+        &:before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  .new-checkbox {
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    height: $module-rem * 1.5;
+    margin: 0 $module-rem * .75 0 0;
+    position: relative;
+    vertical-align: top;
+    width: $module-rem * 1.5;
+
+    &:before {
+      background: $main-color;
+      bottom: 3px;
+      content: '';
+      left: 3px;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      transform: scale(0);
+      transition: transform .2s $animation;
+    }
+  }
+}

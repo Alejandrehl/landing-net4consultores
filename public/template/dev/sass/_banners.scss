@@ -1,0 +1,53 @@
+/******************************************************************************
+  Banners
+*******************************************************************************/
+.banners {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $module-rem * 2;
+  min-height: 100%;
+
+  .banner {
+    display: block;
+    line-height: 1;
+    margin: 0 auto $module-rem * 2;
+    max-width: 100%;
+    position: relative;
+    @media #{$max767} {
+      margin-bottom: $module-rem;
+    }
+
+    &:before {
+      background: rgba(#000,.6);
+      bottom: $module;
+      content: '';
+      left: $module;
+      position: absolute;
+      right: $module;
+      top: $module;
+      transition: background .2s $animation;
+    }
+    img {
+      width: 100%;
+    }
+    .title {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      @include fontSize(18px);
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      padding: $module-rem * 2;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 100%;
+    }
+    &:hover {
+      &:before {
+        background: rgba($main-color,.6);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/******************************************************************************
+  Modern Posts
+*******************************************************************************/
+.modern-list-layout {
+  .post {
+    > .row {
+      align-items: center;
+    }
+    .post-media {
+      @media #{$min992} {
+        padding-left: $module-rem * 5;
+        padding-right: $module-rem * 5;
+      }
+      @media #{$max543} {
+        margin-bottom: $module-rem * 2;
+      }
+
+      a {
+        height: auto;
+
+        img {
+          height: auto;
+        }
+      }
+    }
+    .post-entry {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .post-header {
+      padding: 0;
+    }
+    .post-content {
+      padding: 0;
+    }
+    &:nth-child(2n) {
+      .post-media {
+        @media #{$min544} {
+          order: 1;
+        }
+      }
+    }
+  }
+}

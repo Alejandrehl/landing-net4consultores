@@ -1,0 +1,107 @@
+/******************************************************************************
+  Helper Classes
+*******************************************************************************/
+.accent-color {
+  color: $main-color !important;
+}
+@media #{$max543} {
+  .margin-xs {
+    margin-bottom: $module-rem * 2;
+  }
+  .margin-xs-1 {
+    margin-bottom: $module-rem;
+  }
+}
+@media #{$max767} {
+  .margin-sm {
+    margin-bottom: $module-rem * 2;
+  }
+  .margin-sm-1 {
+    margin-bottom: $module-rem;
+  }
+}
+@media #{$max991} {
+  .margin-md {
+    margin-bottom: $module-rem * 2;
+  }
+  .margin-md-1 {
+    margin-bottom: $module-rem;
+  }
+}
+@media #{$max1199} {
+  .margin-lg {
+    margin-bottom: $module-rem * 2;
+  }
+  .margin-lg-1 {
+    margin-bottom: $module-rem;
+  }
+}
+.margin {
+  margin-bottom: $module-rem * 4;
+  @media #{$max767} {
+    margin-bottom: $module-rem * 1.5;
+  }
+}
+.padding {
+  padding: $module-rem * 3;
+  @media #{$max767} {
+    padding: $module-rem * 1.5;
+  }
+}
+.buttons-list {
+  .btn {
+    margin: 5px;
+  }
+}
+.bg {
+  background: #fff;
+}
+.bg-overlay {
+  background: rgba(#000,.05);
+}
+.accent-color {
+  color: $main-color;
+}
+.all-caps,
+.all-caps * {
+  text-transform: uppercase;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.date {
+  color: #999;
+  @include fontSize(13px);
+  font-family: $second-font-family;
+  letter-spacing: .025em;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.facebook-bg {
+  background: #3B5998;
+}
+.google-plus-bg {
+  background: #dd4b39;
+}
+.pinterest-bg {
+  background: #C92228;
+}
+.section {
+  padding-top: $module-rem * 2;
+  padding-bottom: $module-rem * 2;
+  @media #{$max767} {
+    padding-top: $module-rem;
+    padding-bottom: $module-rem;
+  }
+}
+.music-iframe {
+  padding-bottom: 200px;
+}
+.required,
+.red-text {
+  color: #fb631e;
+}
+.green-text {
+  color: #5D9110;
+}

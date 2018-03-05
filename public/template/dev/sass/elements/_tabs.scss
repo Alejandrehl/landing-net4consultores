@@ -1,0 +1,47 @@
+/******************************************************************************
+  Tabs
+*******************************************************************************/
+.nav-tabs {
+  border: 0;
+  @media #{$max767} {
+    border: 1px solid rgba(#000,.05);
+    border-bottom-color: #000;
+  }
+
+  .nav-item {
+    margin: 0 2px 0 0;
+    @media #{$max767} {
+      float: none;
+      margin: 0 !important;
+    }
+
+    + .nav-item {
+      margin: 0 2px 0 0;
+    }
+    .nav-link {
+      border: 0;
+      border-radius: 0;
+      color: inherit;
+      padding: $module-rem $module-rem * 3;
+      @media #{$max767} {
+        padding: $module-rem * .75 $module-rem * 1.5;
+      }
+
+      &:hover {
+        color: $main-color;
+      }
+      &.active {
+        background: rgba(#000,.05);
+        border: 0;
+        color: #000;
+      }
+    }
+  }
+}
+.tab-content {
+  background: rgba(#000,.05);
+  padding: $module-rem * 3;
+  @media #{$max767} {
+    padding: $module-rem * 1.5;
+  }
+}

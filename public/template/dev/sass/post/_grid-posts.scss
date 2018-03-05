@@ -1,0 +1,53 @@
+/******************************************************************************
+  Grid Posts
+*******************************************************************************/
+.grid-layout {
+  .grid-item {
+    .post {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 528px;
+
+      .post-media {
+        margin-bottom: $module-rem * 3;
+      }
+      .post-header {
+        margin-bottom: $module-rem * 2;
+        @media #{$min768} {
+          padding-left: $module-rem * 2;
+          padding-right: $module-rem * 2;
+        }
+
+        &:first-child {
+          padding-top: $module-rem * 2;
+        }
+        .tags {
+          margin-bottom: $module-rem;
+        }
+        .post-title {
+          margin-bottom: $module-rem;
+          @include fontSize(24px);
+          @media #{$max767} {
+            @include fontSize(22px);
+          }
+        }
+      }
+      .post-content {
+        margin-bottom: $module-rem * 1.5;
+        @media #{$min768} {
+          padding-left: $module-rem * 2;
+          padding-right: $module-rem * 2;
+        }
+      }
+      .post-footer {
+        .post-author,
+        .post-sharing {
+          @media #{$min768} {
+            padding-left: $module-rem * 2;
+            padding-right: $module-rem * 2;
+          }
+        }
+      }
+    }
+  }
+}

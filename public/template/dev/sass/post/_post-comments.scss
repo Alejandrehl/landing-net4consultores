@@ -1,0 +1,115 @@
+/******************************************************************************
+  Post Comments
+*******************************************************************************/
+.post-comments {
+  background: rgba(#000,.05);
+  padding: $module-rem * 3;
+  @media #{$max767} {
+    padding: $module-rem * 1.5;
+  }
+
+  .title {
+    margin-bottom: $module-rem * 2;
+  }
+}
+.comments {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .comment {
+    overflow: hidden;
+    padding: 0 0 $module-rem * 1.5;
+    position: relative;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .author-img {
+      float: left;
+      height: 50px;
+      margin: 0 $module-rem * 1.5 $module-rem * 1.5 0;
+      width: 50px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+    .reply {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      a {
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+    .author {
+      margin-bottom: 5px;
+    }
+    .date {
+      font-style: italic;
+    }
+    p {
+      clear: both;
+    }
+    .children {
+      list-style-type: none;
+      margin: 0;
+      padding: $module-rem * 1.5 0 0 $module-rem * 2;
+
+      .author-img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+.comment-respond {
+  margin-top: $module-rem * 4;
+  @media #{$max767} {
+    margin-top: $module-rem * 3;
+  }
+
+  .comment-reply-title {
+    margin-bottom: $module-rem * 1.5;
+  }
+  .comment-form {
+    margin-bottom: 0;
+
+    .comment-notes {
+      font-size: 90%;
+    }
+    .left-field {
+      float: left;
+      padding-right: 15px;
+      width: 50%;
+      @media #{$max543} {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+    .right-field {
+      float: right;
+      padding-left: 15px;
+      width: 50%;
+      @media #{$max543} {
+        float: none;
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+    .btn-form-group {
+      clear: both;
+      padding-top: 2rem;
+    }
+    @media #{$max543} {
+      .submit {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

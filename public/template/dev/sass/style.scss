@@ -1,0 +1,56 @@
+/*
+Theme Name: Margery
+Theme URI: http://margery.next-item.com/blog
+Author: Next Item
+Author URI: next-item.com
+Description: Personal Blog Template
+Version: 1.0.1
+License: ThemeForest Regular & Extended License
+License URI: http://themeforest.net/licenses/regular_extended
+
+[Table of contents]
+1. Typography
+2. Structure
+3. Helper Classes
+4. Preloader
+5. Header
+6. Slider
+7. Banners
+8. Footer
+9. Animation
+10. Elements
+11. Post
+12. Sidebar
+13. Widgets
+14. Page
+*/
+
+@charset "UTF-8";
+
+//Variables
+@import "variables";
+@import "fonts";
+
+@import "typography";
+@import "structure";
+@import "helper-classes";
+@import "preloader";
+
+@import "header/*";
+@import "slider";
+@import "banners";
+@import "footer";
+@import "animation";
+
+//Elements
+@import "elements/*";
+
+//Blog
+@import "post/*";
+
+//Sidebar
+@import "sidebar";
+@import "widgets";
+
+//Pages
+@import "page/*";

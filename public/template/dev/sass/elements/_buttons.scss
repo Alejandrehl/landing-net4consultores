@@ -1,0 +1,47 @@
+/******************************************************************************
+  Buttons
+*******************************************************************************/
+.btn {
+  border-radius: 0;
+  @include fontSize(12px);
+  font-weight: 600;
+  letter-spacing: .175em;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  transition:
+    background .2s $animation,
+    border .2s $animation,
+    color .2s $animation;
+  @media #{$max767} {
+    padding: 8px 20px;
+  }
+
+  &.active.focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &:active:focus,
+  &:focus {
+    outline: none;
+  }
+  &.btn-default {
+    background-color: $main-color;
+    border-color: $main-color;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: $main-color;
+    }
+  }
+  &.btn-outline-default {
+    background-color: transparent;
+    border-color: $main-color;
+    color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}

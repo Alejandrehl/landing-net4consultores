@@ -1,0 +1,155 @@
+/******************************************************************************
+  Footer
+*******************************************************************************/
+.site-footer {
+	@include fontSize(12px);
+	flex: 0 0 auto;
+	line-height: 1.75;
+  width: 100%;
+
+	.footer-banners {
+		.banners-title {
+			color: #ccc;
+			@include fontSize(20px);
+			text-align: center;
+		}
+		> ul {
+			list-style-type: none;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+
+			> li {
+				float: left;
+				width: 12.5%;
+				@media #{$max767} {
+					width: 25%;
+				}
+
+				a {
+					display: block;
+					position: relative;
+					text-decoration: none;
+
+					&:before {
+						bottom: 0;
+						content: '';
+						left: 0;
+						position: absolute;
+						right: 0;
+						top: 0;
+						transition:
+							background .2s $animation,
+							bottom .2s $animation,
+							left .2s $animation,
+							right .2s $animation,
+							top .2s $animation;
+					}
+					.item-info {
+						color: #fff;
+						font-size: 14px;
+						left: 0;
+						list-style-type: none;
+						line-height: 1;
+						margin: 0;
+						opacity: 0;
+						padding: 0;
+						position: absolute;
+						right: 0;
+						text-align: center;
+						top: 50%;
+						transition:
+							.2s opacity 0s $animation,
+							.2s margin 0s $animation;
+						@media #{$max991} {
+							display: none;
+						}
+
+						li {
+							display: inline-block;
+							margin: 0 5px;
+							vertical-align: top;
+
+							&:before {
+								display: inline-block;
+								font: normal normal normal 14px/1 FontAwesome;
+								text-rendering: auto;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+								font-style: normal;
+								font-weight: normal;
+								font-variant: normal;
+								text-transform: none;
+								line-height: 14px;
+								font-size: 16px;
+								margin-right: 5px;
+								vertical-align: top;
+							}
+							&.likes {
+								&:before {
+									content: '\f08a';
+								}
+							}
+							&.comments {
+								&:before {
+									content: '\f0e5';
+								}
+							}
+						}
+					}
+					&:hover {
+						&:before {
+							background: rgba(#000,.6);
+							bottom: $module/2;
+							left: $module/2;
+							right: $module/2;
+							top: $module/2;
+						}
+						.item-info {
+							margin-top: -7px;
+							opacity: 1;
+							transition:
+								.2s opacity .2s $animation,
+								.2s margin .2s $animation;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container {
+		padding-top: $module-rem * 1.5;
+		padding-bottom: $module-rem * 1.5;
+		@media #{$max767} {
+			padding-top: $module-rem;
+			padding-bottom: $module-rem;
+		}
+	}
+	.footer-menu {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 5px;
+				vertical-align: top;
+			}
+		}
+	}
+	.footer-sidebar {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+
+		.widget {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	> hr {
+		margin: 0;
+		padding: 0;
+	}
+}

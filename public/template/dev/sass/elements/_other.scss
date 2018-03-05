@@ -1,0 +1,49 @@
+/******************************************************************************
+  Other Elements
+*******************************************************************************/
+.contact-form {
+  .form-submit {
+    margin: 0 -10px;
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+
+    .btn,
+    .form-message {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+
+      @media (max-width: 767px) {
+        display: block;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .form-message {
+      display: none;
+      @include fontSize(14px);
+      @media (max-width: 767px) {
+        span {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 5px 0;
+
+    .material-icons {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
