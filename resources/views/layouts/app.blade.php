@@ -121,16 +121,20 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 text-xs-center text-sm-left">
+                <div class="col-sm-3 text-xs-center text-sm-left">
                     <p>&#169; 2018 - All Rights Reserved.</p>
                 </div>
-                <div class="col-sm-2 text-xs-center text-sm-right">
-                    <i class="fa fa-phone"> (+56) 9 4258 7407</i>
+                <div class="col-sm-3 text-xs-center text-sm-right">
+                    <i class="fa fa-phone"> 
+                    <strong style="font-size: 1.5em;">(+56) 9 4258 7407</strong>
+                    </i>
                 </div>
-                <div class="col-sm-2 text-xs-center text-sm-right">
-                    <i class="fa fa-email"> mtoro@net4.cl</i>
+                <div class="col-sm-3 text-xs-center text-sm-right">
+                    <i class="fa fa-envelope-o" aria-hidden="true">
+                         <strong style="font-size: 1.5em;">mtoro@net4.cl</strong>
+                    </i>
                 </div>
-                <div class="col-sm-4 text-xs-center text-sm-right">
+                <div class="col-sm-3 text-xs-center text-sm-right">
                     <p>NET4 Consultores Ltda.</p>
                 </div>
             </div>
@@ -153,6 +157,7 @@
     <script src="{{ asset('template/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('template/js/masonry.pkgd.min.js') }}"></script>
     <script src="{{ asset('template/js/main.js') }}"></script>
+    @yield('javascript')
 
 </body>
 </html>

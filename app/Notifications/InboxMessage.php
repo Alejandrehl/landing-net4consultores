@@ -17,10 +17,10 @@ class InboxMessage extends Notification
      *
      * @return void
      */
-    protected $message;
-    public function __construct(contactFormRequest $message)
+    protected $request;
+    public function __construct(contactFormRequest $request)
     {
-        $this->message = $message;
+        $this->request = $request;
     }
 
     /**
@@ -44,10 +44,10 @@ class InboxMessage extends Notification
     {
         return (new MailMessage)
                     ->subject(config('admin.name') . ", Tienes un nuevo mensaje!")
-                    ->greeting(" ")
-                    ->salutation(" ")
-                    ->from($this->message->email, $this->message->name)
-                    ->line($this->message->message);
+                    ->greeting("Mensaje enviado por ". $this->request->name .", su email es ". $this->request->email . " y su número de contacto ". $this->request->phone)
+                    ->salutation("Net 4 Consultores")
+                    ->from($this->request->email, $this->request->name)
+                    ->line($this->request->message);
     }
 
     /**

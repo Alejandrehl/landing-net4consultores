@@ -24,25 +24,25 @@
 									<div class="col-sm-6">
 										<div class="form-group comment-form-author">
 											<label for="name" class="control-label">Nombre <span class="required red-text">*</span></label>
-											<input id="name" class="form-control" name="name" type="text" value="">
+											<input id="name" class="form-control" name="name" type="text" value="" required>
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group comment-form-email">
 											<label for="email" class="control-label">Email <span class="required red-text">*</span></label>
-											<input id="email" class="form-control" name="email" type="text" value="">
+											<input id="email" class="form-control" name="email" type="email" value="" required>
 										</div>
 									</div>
 									<div class="col-sm-12">
 										<div class="form-group comment-form-url">
 											<label for="phone" class="control-label">Teléfono</label>
-											<input id="phone" class="form-control" name="phone" type="number" value="">
+											<input id="phone" class="form-control" name="phone" type="text" value="" required>
 										</div>
 									</div>
 									<div class="col-sm-12">
 										<div class="form-group comment-form-comment">
 											<label for="message" class="control-label">Tu mensaje <span class="required red-text">*</span></label>
-											<textarea id="message" class="form-control" name="message"></textarea>
+											<textarea id="message" class="form-control" name="message" required></textarea>
 										</div>
 									</div>
 								</div>
@@ -58,7 +58,9 @@
 						<h4 class="widget-title"><span>Presentación</span></h4>
 								<img src="img/about-us.jpg" width="450" height="450" alt="">
 								<div class="post-content">
+								<a href="/pdf/presentacion_empresa.pdf">
 									<img class="retina" src="img/descargar-pdf.png" width="300" height="300" alt="">
+								</a>
 									<h6>Presentación de Empresa PDF</h6>
 								</div>
 					</aside><!-- .latest-posts -->

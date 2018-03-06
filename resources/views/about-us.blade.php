@@ -97,7 +97,7 @@
 				</div>
 
 				<div class="col-xs-12 col-lg-4 sidebar">
-					<aside class="widget bg">
+{{-- 					<aside class="widget bg">
 						<h4 class="widget-title"><span>Contacto</span></h4>
 
 						<form class="subscribe m-b-0">
@@ -111,12 +111,14 @@
 							</div>
 							<button class="btn btn-block btn-outline-primary">Enviar</button>
 						</form>
-					</aside>
+					</aside> --}}
 					<aside class="widget bg latest-posts-widget">
 						<h4 class="widget-title"><span>Presentación</span></h4>
 								<img src="img/about-us.jpg" width="450" height="450" alt="">
 								<div class="post-content">
+								<a href="/pdf/presentacion_empresa.pdf">
 									<img class="retina" src="img/descargar-pdf.png" width="300" height="300" alt="">
+								</a>
 									<h6>Presentación de Empresa PDF</h6>
 								</div>
 					</aside><!-- .latest-posts -->
