@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col col-xs-6 col-md-3">
                     <a href="/" class="logo">
-                        <img src="{{URL::asset('/img/logo-net4.jpg')}}" width="120" height="120">
+                        <img src="{{URL::asset('/img/logo-net4.jpg')}}">
                     </a>
                 </div>
 
@@ -52,6 +52,7 @@
                                 <li class="menu-item"><a href="/about-us">Quienes Somos</a></li>
                                 <li class="menu-item"><a href="/services">Servicios</a></li>
                                 <li class="menu-item"><a href="/contact-us">Contacto</a></li>
+                                <li class="menu-item"><a href="/cotizador">Cotizador</a></li>
                             </ul>
                         </nav><!-- .menu-list-wrap -->
                     </div><!-- .main-menu -->

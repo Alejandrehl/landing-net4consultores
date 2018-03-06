@@ -1,0 +1,8 @@
+[08-Dec-2015 05:16:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_fabricantes.php on line 72
+[08-Dec-2015 05:17:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_fabricantes.php on line 72
+[08-Dec-2015 05:17:02 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_productos.php on line 111
+[08-Dec-2015 05:17:02 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_productos.php on line 111
+[08-Dec-2015 05:17:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_fabricantes.php on line 72
+[08-Dec-2015 05:18:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_productos.php on line 111
+[08-Dec-2015 05:18:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_productos.php on line 111
+[08-Dec-2015 05:18:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/obedalvarado/public_html/cotizaciones/ajax/buscar_fabricantes.php on line 72
