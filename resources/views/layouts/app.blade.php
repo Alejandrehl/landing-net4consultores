@@ -37,8 +37,8 @@
         <div class="container">
             <div class="row">
                 <div class="col col-xs-6 col-md-3">
-                    <a href="/" class="logo">
-                        <img src="{{URL::asset('/img/logo-net4.jpg')}}">
+                    <a href="/">
+                        <img src="{{URL::asset('/img/logo-net4.jpg')}}" width="103" height="103">
                     </a>
                 </div>
 

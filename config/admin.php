@@ -1,7 +1,7 @@
 <?php
 return [
    
-    'email' => 'frasandova@gmail.com',
+    'email' => 'contacto@net4.cl',
     'name' => 'Net 4 Consultores',
      
 ];
