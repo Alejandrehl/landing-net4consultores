@@ -53,6 +53,7 @@
                                 <li class="menu-item"><a href="/services">Servicios</a></li>
                                 <li class="menu-item"><a href="/contact-us">Contacto</a></li>
                                 <li class="menu-item"><a href="/cotizador">Cotizador</a></li>
+                                <li class="menu-item"><a href="http://itil.net4.cl/">Sistema de ticket</a></li>
                             </ul>
                         </nav><!-- .menu-list-wrap -->
                     </div><!-- .main-menu -->
@@ -131,7 +132,7 @@
                 </div>
                 <div class="col-sm-3 text-xs-center text-sm-right">
                     <i class="fa fa-envelope-o" aria-hidden="true">
-                         <strong style="font-size: 1.5em;">mtoro@net4.cl</strong>
+                         <strong style="font-size: 1.5em;">contacto@net4.cl</strong>
                     </i>
                 </div>
                 <div class="col-sm-3 text-xs-center text-sm-right">
